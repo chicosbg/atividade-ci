@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build-and-test:
@@ -23,3 +26,6 @@ jobs:
 
       - name: Executar os testes
         run: go test -v ./...
+        
+      - name: Build da imagem Docker
+        run: docker build -t app-go-imagem .

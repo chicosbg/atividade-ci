@@ -17,3 +17,15 @@ Um runner é a máquina (geralmente uma máquina virtual ou um container) que re
 
 Usar Docker em uma pipeline de CI é extremamente útil porque ele resolve o problema do "na minha máquina funciona" ao empacotar o código junto com seu ambiente, garantindo que a aplicação rode de forma idêntica no desenvolvimento, no CI e em produção. Além de proporcionar um isolamento rigoroso, evitando que resquícios de testes anteriores interfiram na execução atual, o processo gera como resultado um artefato final padronizado e pronto para deploy, que pode ser rapidamente enviado para um registro e implantado em qualquer infraestrutura de nuvem.
 
+5. Altere temporariamente o código para fazer um teste falhar.
+
+- O que aconteceu com o pipeline?
+
+Tentou rodar a compilação do codigo, porem quebrou por causa do fmt.testeErrado.
+
+- Em qual etapa ele falhou?
+
+foi na etapa "Compilar a aplicacao Go"
+
+
+![alt text](imagens/image.png)

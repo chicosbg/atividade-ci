@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(greeting.Message("turma"))
+	fmt.Println(greeting.Message("turma"));
 }
